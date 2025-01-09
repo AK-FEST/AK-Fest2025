@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perlombaan - AK-FEST 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="perlombaan-page">
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>AK-FEST 2025</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html"class="tbl-biru">Home</a></li>
+                    <li><a href="#" id="pameran-link" class="tbl-biru">Pameran</a></li>
+                    <li><a href="perlombaan.html" class="tbl-biru">Perlombaan</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<div class="wrapper">
+    <section class="perlombaan-images">
+        <div class="image-container">
+            <img src="WhatsApp Image 2024-12-30 at 15.43.23.jpeg" alt="Gambar Perlombaan 1">
+            <p class="image-caption">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSei7niChZetlxGA9AQXSQ0zM4xp_mte7fvv9ejozpGtglyyCA/viewform?usp=header" target="_blank">Daftar disini!</a>
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="WhatsApp Image 2024-12-30 at 15.37.16.jpeg" alt="Gambar Perlombaan 2">
+            <p class="image-caption">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXgl1lz6A61FhTeIyvl-54Hh1WWjC6zL5DszmRHH2_VaAr2g/viewform?usp=sf_link" target="_blank">Daftar disini!</a>
+            </p>
+        </div>
+    </section>
+    <section class="perlombaan-images">
+        <div class="image-container">
+            <img src="WhatsApp Image 2024-12-30 at 15.59.25.jpeg" alt="Gambar Tengah">
+            <p class="image-caption">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTnycAzVarGlgFD7hjM3gIliyChdDmztdu0Ic_MqHEATyB2A/viewform?usp=header" target="_blank">Daftar disini!</a>
+            </p>
+        </div>
+    </section>
+    <section class="perlombaan-images">
+        <div class="image-container">
+            <img src="WhatsApp Image 2024-12-30 at 15.59.21.jpeg" alt="Gambar Perlombaan 1">
+            <p class="image-caption">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScsH6mVHx3mUMmvr7qqaLF_PEziQH0z5xqbb63T9KLA6Rtzxw/viewform?usp=header" target="_blank">Daftar disini!</a>
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="WhatsApp Image 2024-12-30 at 15.59.25.jpeg" alt="Gambar Perlombaan 2">
+            <p class="image-caption">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScy6yesAW5xyW8Y-evNT8odkvw1lPojy-9ByXdOVN98InKo-w/viewform?usp=header" target="_blank">Daftar disini!</a>
+            </p>
+        </div>
+    </section>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-modal">&times;</span>
+        <p>Coming Soon!</p>
+    </div>
+</div>
+<footer>
+    <div class="wrapper">
+        <p>&copy; 2025 AK-FEST | All Rights Reserved.</p>
+        <ul class="social-media">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Tiktok</a></li>
+        </ul>
+        <p><strong>CP:085740058784 (Intan)</strong></p>
+    </div>   
+</footer>
+<script>
+    // JavaScript untuk popup modal "Pameran"
+    const modal = document.getElementById('modal');
+    const pameranLink = document.getElementById('pameran-link');
+    const closeModal = document.getElementById('close-modal');
+
+    // Menampilkan modal saat link "Pameran" diklik
+    pameranLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Mencegah redirect
+        modal.style.display = 'block';
+    });
+
+    // Menutup modal saat tombol close diklik
+    closeModal.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    // Menutup modal saat klik di luar modal
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>
