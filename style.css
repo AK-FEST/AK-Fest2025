@@ -112,9 +112,6 @@ a.tbl-biru {
     font-size: 3rem;
     color: #ffffff; /* Warna teks utama */
     -webkit-text-stroke: 1px #6818a5; /* Outline hitam */
-    text-shadow: 
-        0px 2px 4px white,  /* Shadow putih ke kanan-bawah */
-        -2px -2px 4px white; /* Shadow putih ke kiri-atas */
 }
 
 .boxes {
@@ -132,9 +129,6 @@ a.tbl-biru {
     font-size: 1.5rem;
     color: #ffffff; /* Warna teks utama */
     -webkit-text-stroke: 1px #6818a5; /* Outline hitam */
-    text-shadow: 
-        0px 2px 4px white,  /* Shadow putih ke kanan-bawah */
-        -2px -2px 4px white; /* Shadow putih ke kiri-atas */
     text-align: center;    
 }
 
