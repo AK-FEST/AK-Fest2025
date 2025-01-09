@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AK-FEST 2025.</title>
+    <title>AK-FEST 2025</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <nav role="navigation">
         <div class="wrapper">
             <div class="logo"><a href=''>AK-FEST 2025</a></div>
-            <div class="hamburger-menu" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+            <button class="hamburger-menu" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="menu" id="menu">
                 <ul>
-                    <li><a href=""class="tbl-biru">Home</a></li>
+                    <li><a href="" class="tbl-biru">Home</a></li>
                     <li><a href="#" id="pameran-link" class="tbl-biru">Pameran</a></li>
                     <li><a href="perlombaan.html" class="tbl-biru">Perlombaan</a></li>
                 </ul>
@@ -29,12 +29,12 @@
             <img src="Tak berjudul38_20241123173713.png"
             width="600px" height="600px">
             <div class="content">
-                <p class="shadow">AK-Fest adalah salah satu kompetesi di bidang seni dan olahraga yang diikuti siswa siswi SMA/SMK sederajat. AK-Fest ini dilaksanakan oleh BEM AK-TEKSTIL SOLO dengan tujuan untuk memupuk jiwa sportifitas dalam berlomba untuk menghasilkan karya seni yang terbaik diantara siswa dan siswi Se-Jawa Tengah.</p>
-                <p class="shadow">Juga untuk menjalin hubungan baik dengan SMA/SMK Se-Jawa Tengah serta mendorong agar para siswa lebih kreatif dan inovatif. Tema yang diambil untuk AK-Fest tahun ini adalah Celebrate Togetherness Unite Dreams.</p></p>
+                <p class="shadow">AK-Fest adalah salah satu kompetisi di bidang seni dan olahraga yang diikuti siswa siswi SMA/SMK sederajat. AK-Fest ini dilaksanakan oleh BEM AK-TEKSTIL SOLO dengan tujuan untuk memupuk jiwa sportifitas dalam berlomba untuk menghasilkan karya seni yang terbaik di antara siswa dan siswi Se-Jawa Tengah.</p>
+                <p class="shadow">Juga untuk menjalin hubungan baik dengan SMA/SMK Se-Jawa Tengah serta mendorong agar para siswa lebih kreatif dan inovatif. Tema yang diambil untuk AK-Fest tahun ini adalah Celebrate Togetherness Unite Dreams.</p>
             </div>
             <div class="boxes">
                 <div class="box-left">
-                    <p>AK-Fest 2025 merupakan event yang menyalakan semarak para siswa yang membawa perubahan dan inovasi melalui perlombaan yang dirancang dalam event AK-Fest 2025 untuk menyalurkan minat dan bakat yang ada didalam diri melalui seni dan ekspresi.</p>
+                    <p>AK-Fest 2025 merupakan event yang menyalakan semarak para siswa yang membawa perubahan dan inovasi melalui perlombaan yang dirancang dalam event AK-Fest 2025 untuk menyalurkan minat dan bakat yang ada di dalam diri melalui seni dan ekspresi.</p>
                     <p>-Ketua Pelaksana-</p>
                 </div>
                 <div class="box-right">
@@ -42,7 +42,6 @@
                     <p>-Presiden Mahasiswa-</p>
                 </div>
             </div>
-
         </section>     
     </div>
     <div id="modal" class="modal">
@@ -58,7 +57,7 @@
                 <li><a href="https://www.instagram.com/akfest_?igsh=NG9rdndjcDUxMWNy">Instagram</a></li>
                 <li><a href="https://www.tiktok.com/@bem_aktekstil?_t=8se4MbvRC59&_r=1">Tiktok</a></li>
             </ul>
-            <p><strong>CP:085740058784 (Intan)</strong></p>
+            <p><strong>CP: 085740058784 (Intan)</strong></p>
         </div>   
     </footer>
     <script>
@@ -81,6 +80,7 @@
                 modal.style.display = 'none';
             }
         });
+
         function toggleMenu() {
             const menu = document.querySelector('.menu');
             menu.classList.toggle('active');
