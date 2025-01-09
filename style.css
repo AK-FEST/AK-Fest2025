@@ -284,11 +284,15 @@ body.perlombaan-page {
 }
 
 .hamburger-menu {
-    display: none; /* Default: sembunyikan hamburger */
+    display: none; /* Default untuk desktop */
     flex-direction: column;
     cursor: pointer;
-    margin-right: 20px; /* Jarak dari tepi kanan */
+    position: absolute; /* Agar bisa diatur posisinya secara bebas */
+    right: 20px; /* Jarak dari tepi kanan */
+    top: 50%; /* Posisikan di tengah vertikal */
+    transform: translateY(-50%); /* Pastikan elemen berada tepat di tengah */
 }
+
 
 .hamburger-menu span {
     background: #fe8402;
@@ -302,7 +306,7 @@ body.perlombaan-page {
 @media (max-width: 768px) {
     /* Tambahan untuk Hamburger Menu */
 .hamburger-menu {
-    display: none; /* Default: sembunyikan hamburger */
+    display: flex; /* Default: sembunyikan hamburger */
     flex-direction: column;
     cursor: pointer;
     margin-right: 20px; /* Jarak dari tepi kanan */
